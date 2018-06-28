@@ -28,10 +28,10 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.txbSearch = new System.Windows.Forms.RichTextBox();
-         this.txbReplace = new System.Windows.Forms.RichTextBox();
-         this.txbOriginal = new System.Windows.Forms.RichTextBox();
-         this.txbFinal = new System.Windows.Forms.RichTextBox();
+         this.txbSearch = new FastColoredTextBoxNS.FastColoredTextBox();
+         this.txbReplace = new FastColoredTextBoxNS.FastColoredTextBox();
+         this.txbOriginal = new FastColoredTextBoxNS.FastColoredTextBox();
+         this.txbFinal = new FastColoredTextBoxNS.FastColoredTextBox();
          this.btnReplace = new System.Windows.Forms.Button();
          this.label1 = new System.Windows.Forms.Label();
          this.label2 = new System.Windows.Forms.Label();
@@ -137,6 +137,142 @@
          this.label4.TabIndex = 8;
          this.label4.Text = "Final";
          // 
+         // txbOriginal
+         // 
+         this.txbOriginal.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+         this.txbOriginal.AutoScrollMinSize = new System.Drawing.Size(23, 12);
+         this.txbOriginal.BackBrush = null;
+         this.txbOriginal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+         this.txbOriginal.CharHeight = 12;
+         this.txbOriginal.CharWidth = 6;
+         this.txbOriginal.Cursor = System.Windows.Forms.Cursors.IBeam;
+         this.txbOriginal.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+         this.txbOriginal.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+         this.txbOriginal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.txbOriginal.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+         this.txbOriginal.IsReplaceMode = false;
+         this.txbOriginal.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.txbOriginal.Location = new System.Drawing.Point(12, 170);
+         this.txbOriginal.Name = "txbOriginal";
+         this.txbOriginal.Paddings = new System.Windows.Forms.Padding(0);
+         this.txbOriginal.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+         this.txbOriginal.Size = new System.Drawing.Size(355, 122);
+         this.txbOriginal.TabIndex = 9;
+         this.txbOriginal.TextAreaBorderColor = System.Drawing.Color.Transparent;
+         this.txbOriginal.Zoom = 100;
+         // 
+         // txbFinal
+         // 
+         this.txbFinal.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+         this.txbFinal.AutoScrollMinSize = new System.Drawing.Size(23, 12);
+         this.txbFinal.BackBrush = null;
+         this.txbFinal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+         this.txbFinal.CharHeight = 12;
+         this.txbFinal.CharWidth = 6;
+         this.txbFinal.Cursor = System.Windows.Forms.Cursors.IBeam;
+         this.txbFinal.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+         this.txbFinal.Font = new System.Drawing.Font("Consolas", 8.25F);
+         this.txbFinal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.txbFinal.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+         this.txbFinal.IsReplaceMode = false;
+         this.txbFinal.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.txbFinal.Location = new System.Drawing.Point(12, 311);
+         this.txbFinal.Name = "txbFinal";
+         this.txbFinal.Paddings = new System.Windows.Forms.Padding(0);
+         this.txbFinal.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+         this.txbFinal.Size = new System.Drawing.Size(355, 125);
+         this.txbFinal.TabIndex = 10;
+         this.txbFinal.TextAreaBorderColor = System.Drawing.Color.Transparent;
+         this.txbFinal.Zoom = 100;
+         // 
+         // txbReplace
+         // 
+         this.txbReplace.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+         this.txbReplace.AutoScrollMinSize = new System.Drawing.Size(23, 12);
+         this.txbReplace.BackBrush = null;
+         this.txbReplace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+         this.txbReplace.CharHeight = 12;
+         this.txbReplace.CharWidth = 6;
+         this.txbReplace.Cursor = System.Windows.Forms.Cursors.IBeam;
+         this.txbReplace.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+         this.txbReplace.Font = new System.Drawing.Font("Consolas", 8.25F);
+         this.txbReplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.txbReplace.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+         this.txbReplace.IsReplaceMode = false;
+         this.txbReplace.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.txbReplace.Location = new System.Drawing.Point(12, 99);
+         this.txbReplace.Name = "txbReplace";
+         this.txbReplace.Paddings = new System.Windows.Forms.Padding(0);
+         this.txbReplace.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+         this.txbReplace.Size = new System.Drawing.Size(355, 52);
+         this.txbReplace.TabIndex = 11;
+         this.txbReplace.TextAreaBorderColor = System.Drawing.Color.Transparent;
+         this.txbReplace.Zoom = 100;
+         // 
+         // txbSearch
+         // 
+         this.txbSearch.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+         this.txbSearch.AutoScrollMinSize = new System.Drawing.Size(23, 12);
+         this.txbSearch.BackBrush = null;
+         this.txbSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+         this.txbSearch.CharHeight = 12;
+         this.txbSearch.CharWidth = 6;
+         this.txbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+         this.txbSearch.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+         this.txbSearch.Font = new System.Drawing.Font("Consolas", 8.25F);
+         this.txbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.txbSearch.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+         this.txbSearch.IsReplaceMode = false;
+         this.txbSearch.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.txbSearch.Location = new System.Drawing.Point(12, 25);
+         this.txbSearch.Name = "txbSearch";
+         this.txbSearch.Paddings = new System.Windows.Forms.Padding(0);
+         this.txbSearch.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+         this.txbSearch.Size = new System.Drawing.Size(274, 55);
+         this.txbSearch.TabIndex = 12;
+         this.txbSearch.TextAreaBorderColor = System.Drawing.Color.Transparent;
+         this.txbSearch.Zoom = 100;
+         // 
          // ReplaceText
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,22 +293,25 @@
          this.Name = "ReplaceText";
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "ReplaceText";
+         ((System.ComponentModel.ISupportInitialize)(this.txbOriginal)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.txbFinal)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.txbReplace)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.txbSearch)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();
 
       }
 
       #endregion
-
-      private System.Windows.Forms.RichTextBox txbSearch;
-      private System.Windows.Forms.RichTextBox txbReplace;
-      private System.Windows.Forms.RichTextBox txbOriginal;
-      private System.Windows.Forms.RichTextBox txbFinal;
       private System.Windows.Forms.Button btnReplace;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.Label label4;
+      private FastColoredTextBoxNS.FastColoredTextBox txbOriginal;
+      private FastColoredTextBoxNS.FastColoredTextBox txbFinal;
+      private FastColoredTextBoxNS.FastColoredTextBox txbReplace;
+      private FastColoredTextBoxNS.FastColoredTextBox txbSearch;
    }
 }
 
