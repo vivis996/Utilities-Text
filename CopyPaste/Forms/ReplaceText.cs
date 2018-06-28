@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace ReplaceText.Forms
 {
-   public partial class ReplaceText : Form
+   internal partial class ReplaceText : Form
    {
-      public ReplaceText()
+      internal ReplaceText()
       {
          InitializeComponent();
       }
@@ -15,9 +15,17 @@ namespace ReplaceText.Forms
          var search = txbSearch.Text;
          var replace = txbReplace.Text;
          if (string.IsNullOrEmpty(search)) return;
-         var original = txbOriginal.Text;
+         try
+         {
+            var original = txbOriginal.Text;
 
-         txbFinal.Text = original.Replace(search, replace);
+            txbFinal.Text = original.Replace(search, replace);
+         }
+         catch (Exception ex)
+         {
+            const string message = "Error al reemplazr\n", title = "Error";
+            MessageBox.Show(message + ex, title,  MessageBoxButtons.OK, MessageBoxIcon.Error);
+         }
       }
    }
 }
