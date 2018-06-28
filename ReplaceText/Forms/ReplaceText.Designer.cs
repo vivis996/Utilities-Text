@@ -37,30 +37,32 @@
          this.panel4 = new System.Windows.Forms.Panel();
          this.label1 = new System.Windows.Forms.Label();
          this.txbFinal = new FastColoredTextBoxNS.FastColoredTextBox();
-         this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-         this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+         this.scText = new System.Windows.Forms.SplitContainer();
+         this.scTextTools = new System.Windows.Forms.SplitContainer();
          this.panel5 = new System.Windows.Forms.Panel();
          this.label2 = new System.Windows.Forms.Label();
          this.txbSearch = new FastColoredTextBoxNS.FastColoredTextBox();
          this.panel6 = new System.Windows.Forms.Panel();
          this.label4 = new System.Windows.Forms.Label();
          this.txbReplace = new FastColoredTextBoxNS.FastColoredTextBox();
+         this.tlpPrincipal = new System.Windows.Forms.TableLayoutPanel();
          ((System.ComponentModel.ISupportInitialize)(this.txbOriginal)).BeginInit();
          this.panel1.SuspendLayout();
          this.panel4.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.txbFinal)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-         this.splitContainer1.Panel1.SuspendLayout();
-         this.splitContainer1.Panel2.SuspendLayout();
-         this.splitContainer1.SuspendLayout();
-         ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-         this.splitContainer2.Panel1.SuspendLayout();
-         this.splitContainer2.Panel2.SuspendLayout();
-         this.splitContainer2.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.scText)).BeginInit();
+         this.scText.Panel1.SuspendLayout();
+         this.scText.Panel2.SuspendLayout();
+         this.scText.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.scTextTools)).BeginInit();
+         this.scTextTools.Panel1.SuspendLayout();
+         this.scTextTools.Panel2.SuspendLayout();
+         this.scTextTools.SuspendLayout();
          this.panel5.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.txbSearch)).BeginInit();
          this.panel6.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.txbReplace)).BeginInit();
+         this.tlpPrincipal.SuspendLayout();
          this.SuspendLayout();
          // 
          // txbOriginal
@@ -106,7 +108,7 @@
          this.btnReplace.FlatAppearance.BorderSize = 0;
          this.btnReplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
          this.btnReplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-         this.btnReplace.Location = new System.Drawing.Point(12, 177);
+         this.btnReplace.Location = new System.Drawing.Point(3, 147);
          this.btnReplace.Name = "btnReplace";
          this.btnReplace.Size = new System.Drawing.Size(75, 23);
          this.btnReplace.TabIndex = 3;
@@ -191,47 +193,43 @@
          this.txbFinal.TextAreaBorderColor = System.Drawing.Color.Transparent;
          this.txbFinal.Zoom = 100;
          // 
-         // splitContainer1
+         // scText
          // 
-         this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-         this.splitContainer1.Location = new System.Drawing.Point(12, 206);
-         this.splitContainer1.Name = "splitContainer1";
-         this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+         this.scText.Dock = System.Windows.Forms.DockStyle.Fill;
+         this.scText.Location = new System.Drawing.Point(3, 177);
+         this.scText.Name = "scText";
+         this.scText.Orientation = System.Windows.Forms.Orientation.Horizontal;
          // 
-         // splitContainer1.Panel1
+         // scText.Panel1
          // 
-         this.splitContainer1.Panel1.Controls.Add(this.panel1);
+         this.scText.Panel1.Controls.Add(this.panel1);
          // 
-         // splitContainer1.Panel2
+         // scText.Panel2
          // 
-         this.splitContainer1.Panel2.Controls.Add(this.panel4);
-         this.splitContainer1.Size = new System.Drawing.Size(570, 317);
-         this.splitContainer1.SplitterDistance = 159;
-         this.splitContainer1.SplitterWidth = 1;
-         this.splitContainer1.TabIndex = 15;
+         this.scText.Panel2.Controls.Add(this.panel4);
+         this.scText.Size = new System.Drawing.Size(564, 331);
+         this.scText.SplitterDistance = 166;
+         this.scText.SplitterWidth = 1;
+         this.scText.TabIndex = 15;
          // 
-         // splitContainer2
+         // scTextTools
          // 
-         this.splitContainer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-         this.splitContainer2.Location = new System.Drawing.Point(12, 12);
-         this.splitContainer2.Name = "splitContainer2";
-         this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+         this.scTextTools.Dock = System.Windows.Forms.DockStyle.Fill;
+         this.scTextTools.Location = new System.Drawing.Point(3, 3);
+         this.scTextTools.Name = "scTextTools";
+         this.scTextTools.Orientation = System.Windows.Forms.Orientation.Horizontal;
          // 
-         // splitContainer2.Panel1
+         // scTextTools.Panel1
          // 
-         this.splitContainer2.Panel1.Controls.Add(this.panel5);
+         this.scTextTools.Panel1.Controls.Add(this.panel5);
          // 
-         // splitContainer2.Panel2
+         // scTextTools.Panel2
          // 
-         this.splitContainer2.Panel2.Controls.Add(this.panel6);
-         this.splitContainer2.Size = new System.Drawing.Size(570, 159);
-         this.splitContainer2.SplitterDistance = 79;
-         this.splitContainer2.SplitterWidth = 1;
-         this.splitContainer2.TabIndex = 16;
+         this.scTextTools.Panel2.Controls.Add(this.panel6);
+         this.scTextTools.Size = new System.Drawing.Size(564, 138);
+         this.scTextTools.SplitterDistance = 68;
+         this.scTextTools.SplitterWidth = 1;
+         this.scTextTools.TabIndex = 16;
          // 
          // panel5
          // 
@@ -240,7 +238,7 @@
          this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
          this.panel5.Location = new System.Drawing.Point(0, 0);
          this.panel5.Name = "panel5";
-         this.panel5.Size = new System.Drawing.Size(570, 79);
+         this.panel5.Size = new System.Drawing.Size(564, 68);
          this.panel5.TabIndex = 13;
          // 
          // label2
@@ -285,7 +283,7 @@
          this.txbSearch.Name = "txbSearch";
          this.txbSearch.Paddings = new System.Windows.Forms.Padding(0);
          this.txbSearch.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-         this.txbSearch.Size = new System.Drawing.Size(571, 59);
+         this.txbSearch.Size = new System.Drawing.Size(565, 60);
          this.txbSearch.TabIndex = 9;
          this.txbSearch.TextAreaBorderColor = System.Drawing.Color.Transparent;
          this.txbSearch.Zoom = 100;
@@ -297,7 +295,7 @@
          this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
          this.panel6.Location = new System.Drawing.Point(0, 0);
          this.panel6.Name = "panel6";
-         this.panel6.Size = new System.Drawing.Size(570, 79);
+         this.panel6.Size = new System.Drawing.Size(564, 69);
          this.panel6.TabIndex = 14;
          // 
          // label4
@@ -342,10 +340,29 @@
          this.txbReplace.Name = "txbReplace";
          this.txbReplace.Paddings = new System.Windows.Forms.Padding(0);
          this.txbReplace.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-         this.txbReplace.Size = new System.Drawing.Size(571, 60);
+         this.txbReplace.Size = new System.Drawing.Size(565, 50);
          this.txbReplace.TabIndex = 9;
          this.txbReplace.TextAreaBorderColor = System.Drawing.Color.Transparent;
          this.txbReplace.Zoom = 100;
+         // 
+         // tlpPrincipal
+         // 
+         this.tlpPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+         this.tlpPrincipal.ColumnCount = 1;
+         this.tlpPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+         this.tlpPrincipal.Controls.Add(this.scTextTools, 0, 0);
+         this.tlpPrincipal.Controls.Add(this.scText, 0, 2);
+         this.tlpPrincipal.Controls.Add(this.btnReplace, 0, 1);
+         this.tlpPrincipal.Location = new System.Drawing.Point(12, 12);
+         this.tlpPrincipal.Name = "tlpPrincipal";
+         this.tlpPrincipal.RowCount = 3;
+         this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+         this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle());
+         this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+         this.tlpPrincipal.Size = new System.Drawing.Size(570, 511);
+         this.tlpPrincipal.TabIndex = 17;
          // 
          // ReplaceText
          // 
@@ -353,9 +370,7 @@
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
          this.ClientSize = new System.Drawing.Size(594, 535);
-         this.Controls.Add(this.splitContainer2);
-         this.Controls.Add(this.splitContainer1);
-         this.Controls.Add(this.btnReplace);
+         this.Controls.Add(this.tlpPrincipal);
          this.MinimumSize = new System.Drawing.Size(610, 573);
          this.Name = "ReplaceText";
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -366,20 +381,21 @@
          this.panel4.ResumeLayout(false);
          this.panel4.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.txbFinal)).EndInit();
-         this.splitContainer1.Panel1.ResumeLayout(false);
-         this.splitContainer1.Panel2.ResumeLayout(false);
-         ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-         this.splitContainer1.ResumeLayout(false);
-         this.splitContainer2.Panel1.ResumeLayout(false);
-         this.splitContainer2.Panel2.ResumeLayout(false);
-         ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-         this.splitContainer2.ResumeLayout(false);
+         this.scText.Panel1.ResumeLayout(false);
+         this.scText.Panel2.ResumeLayout(false);
+         ((System.ComponentModel.ISupportInitialize)(this.scText)).EndInit();
+         this.scText.ResumeLayout(false);
+         this.scTextTools.Panel1.ResumeLayout(false);
+         this.scTextTools.Panel2.ResumeLayout(false);
+         ((System.ComponentModel.ISupportInitialize)(this.scTextTools)).EndInit();
+         this.scTextTools.ResumeLayout(false);
          this.panel5.ResumeLayout(false);
          this.panel5.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.txbSearch)).EndInit();
          this.panel6.ResumeLayout(false);
          this.panel6.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.txbReplace)).EndInit();
+         this.tlpPrincipal.ResumeLayout(false);
          this.ResumeLayout(false);
 
       }
@@ -392,14 +408,15 @@
       private System.Windows.Forms.Panel panel4;
       private System.Windows.Forms.Label label1;
       private FastColoredTextBoxNS.FastColoredTextBox txbFinal;
-      private System.Windows.Forms.SplitContainer splitContainer1;
-      private System.Windows.Forms.SplitContainer splitContainer2;
+      private System.Windows.Forms.SplitContainer scText;
+      private System.Windows.Forms.SplitContainer scTextTools;
       private System.Windows.Forms.Panel panel5;
       private System.Windows.Forms.Label label2;
       private FastColoredTextBoxNS.FastColoredTextBox txbSearch;
       private System.Windows.Forms.Panel panel6;
       private System.Windows.Forms.Label label4;
       private FastColoredTextBoxNS.FastColoredTextBox txbReplace;
+      private System.Windows.Forms.TableLayoutPanel tlpPrincipal;
    }
 }
 
