@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyPaste", "CopyPaste\CopyPaste.csproj", "{61AB744C-D931-4430-A935-76CF4CB71C69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceText", "ReplaceText\ReplaceText.csproj", "{61AB744C-D931-4430-A935-76CF4CB71C69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
