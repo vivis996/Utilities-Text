@@ -47,6 +47,9 @@
          this.txbReplace = new FastColoredTextBoxNS.FastColoredTextBox();
          this.tlpPrincipal = new System.Windows.Forms.TableLayoutPanel();
          this.panel2 = new System.Windows.Forms.Panel();
+         this.label5 = new System.Windows.Forms.Label();
+         this.rbtnNormal = new System.Windows.Forms.RadioButton();
+         this.rbtnRegex = new System.Windows.Forms.RadioButton();
          ((System.ComponentModel.ISupportInitialize)(this.txbOriginal)).BeginInit();
          this.panel1.SuspendLayout();
          this.panel4.SuspendLayout();
@@ -369,12 +372,50 @@
          // 
          // panel2
          // 
+         this.panel2.Controls.Add(this.rbtnRegex);
+         this.panel2.Controls.Add(this.rbtnNormal);
+         this.panel2.Controls.Add(this.label5);
          this.panel2.Controls.Add(this.btnReplace);
          this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
          this.panel2.Location = new System.Drawing.Point(3, 153);
          this.panel2.Name = "panel2";
          this.panel2.Size = new System.Drawing.Size(564, 34);
          this.panel2.TabIndex = 10;
+         // 
+         // label5
+         // 
+         this.label5.AutoSize = true;
+         this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.label5.Location = new System.Drawing.Point(3, 0);
+         this.label5.Name = "label5";
+         this.label5.Size = new System.Drawing.Size(70, 13);
+         this.label5.TabIndex = 8;
+         this.label5.Text = "Search mode";
+         // 
+         // rbtnNormal
+         // 
+         this.rbtnNormal.AutoSize = true;
+         this.rbtnNormal.Checked = true;
+         this.rbtnNormal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.rbtnNormal.Location = new System.Drawing.Point(0, 14);
+         this.rbtnNormal.Name = "rbtnNormal";
+         this.rbtnNormal.Size = new System.Drawing.Size(58, 17);
+         this.rbtnNormal.TabIndex = 9;
+         this.rbtnNormal.TabStop = true;
+         this.rbtnNormal.Text = "Normal";
+         this.rbtnNormal.UseVisualStyleBackColor = true;
+         // 
+         // rbtnRegex
+         // 
+         this.rbtnRegex.AutoSize = true;
+         this.rbtnRegex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.rbtnRegex.Location = new System.Drawing.Point(64, 14);
+         this.rbtnRegex.Name = "rbtnRegex";
+         this.rbtnRegex.Size = new System.Drawing.Size(115, 17);
+         this.rbtnRegex.TabIndex = 10;
+         this.rbtnRegex.TabStop = true;
+         this.rbtnRegex.Text = "Regular expression";
+         this.rbtnRegex.UseVisualStyleBackColor = true;
          // 
          // ReplaceText
          // 
@@ -409,6 +450,7 @@
          ((System.ComponentModel.ISupportInitialize)(this.txbReplace)).EndInit();
          this.tlpPrincipal.ResumeLayout(false);
          this.panel2.ResumeLayout(false);
+         this.panel2.PerformLayout();
          this.ResumeLayout(false);
 
       }
@@ -431,6 +473,9 @@
       private FastColoredTextBoxNS.FastColoredTextBox txbReplace;
       private System.Windows.Forms.TableLayoutPanel tlpPrincipal;
       private System.Windows.Forms.Panel panel2;
+      private System.Windows.Forms.Label label5;
+      private System.Windows.Forms.RadioButton rbtnRegex;
+      private System.Windows.Forms.RadioButton rbtnNormal;
    }
 }
 

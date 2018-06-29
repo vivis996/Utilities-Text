@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace ReplaceText.Forms
@@ -18,13 +19,25 @@ namespace ReplaceText.Forms
          try
          {
             var original = txbOriginal.Text;
-
-            txbFinal.Text = original.Replace(search, replace);
+            string textFinal = null;
+            if (rbtnNormal.Checked)
+            {
+               textFinal = original.Replace(search, replace);
+            }
+            else
+            {
+               if (rbtnRegex.Checked)
+               {
+                  var regex = new Regex(search);
+                  textFinal = regex.Replace(original, replace);
+               }
+            }
+            txbFinal.Text = textFinal;
          }
          catch (Exception ex)
          {
             const string message = "Error al reemplazr\n", title = "Error";
-            MessageBox.Show(message + ex, title,  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(message + ex, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
          }
       }
    }
