@@ -46,10 +46,14 @@
          this.label4 = new System.Windows.Forms.Label();
          this.txbReplace = new FastColoredTextBoxNS.FastColoredTextBox();
          this.tlpPrincipal = new System.Windows.Forms.TableLayoutPanel();
-         this.panel2 = new System.Windows.Forms.Panel();
-         this.label5 = new System.Windows.Forms.Label();
-         this.rbtnNormal = new System.Windows.Forms.RadioButton();
+         this.pnFormMode = new System.Windows.Forms.Panel();
+         this.pnSearchMode = new System.Windows.Forms.Panel();
          this.rbtnRegex = new System.Windows.Forms.RadioButton();
+         this.rbtnNormal = new System.Windows.Forms.RadioButton();
+         this.label5 = new System.Windows.Forms.Label();
+         this.rbtnExtract = new System.Windows.Forms.RadioButton();
+         this.rbtnReplace = new System.Windows.Forms.RadioButton();
+         this.label6 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)(this.txbOriginal)).BeginInit();
          this.panel1.SuspendLayout();
          this.panel4.SuspendLayout();
@@ -67,7 +71,8 @@
          this.panel6.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)(this.txbReplace)).BeginInit();
          this.tlpPrincipal.SuspendLayout();
-         this.panel2.SuspendLayout();
+         this.pnFormMode.SuspendLayout();
+         this.pnSearchMode.SuspendLayout();
          this.SuspendLayout();
          // 
          // txbOriginal
@@ -102,7 +107,7 @@
          this.txbOriginal.Name = "txbOriginal";
          this.txbOriginal.Paddings = new System.Windows.Forms.Padding(0);
          this.txbOriginal.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-         this.txbOriginal.Size = new System.Drawing.Size(565, 136);
+         this.txbOriginal.Size = new System.Drawing.Size(565, 159);
          this.txbOriginal.TabIndex = 9;
          this.txbOriginal.TextAreaBorderColor = System.Drawing.Color.Transparent;
          this.txbOriginal.Zoom = 100;
@@ -139,7 +144,7 @@
          this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
          this.panel1.Location = new System.Drawing.Point(0, 0);
          this.panel1.Name = "panel1";
-         this.panel1.Size = new System.Drawing.Size(564, 156);
+         this.panel1.Size = new System.Drawing.Size(564, 179);
          this.panel1.TabIndex = 13;
          // 
          // panel4
@@ -149,7 +154,7 @@
          this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
          this.panel4.Location = new System.Drawing.Point(0, 0);
          this.panel4.Name = "panel4";
-         this.panel4.Size = new System.Drawing.Size(564, 158);
+         this.panel4.Size = new System.Drawing.Size(564, 182);
          this.panel4.TabIndex = 14;
          // 
          // label1
@@ -194,7 +199,7 @@
          this.txbFinal.Name = "txbFinal";
          this.txbFinal.Paddings = new System.Windows.Forms.Padding(0);
          this.txbFinal.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-         this.txbFinal.Size = new System.Drawing.Size(565, 139);
+         this.txbFinal.Size = new System.Drawing.Size(565, 163);
          this.txbFinal.TabIndex = 9;
          this.txbFinal.TextAreaBorderColor = System.Drawing.Color.Transparent;
          this.txbFinal.Zoom = 100;
@@ -202,7 +207,7 @@
          // scText
          // 
          this.scText.Dock = System.Windows.Forms.DockStyle.Fill;
-         this.scText.Location = new System.Drawing.Point(3, 193);
+         this.scText.Location = new System.Drawing.Point(3, 233);
          this.scText.Name = "scText";
          this.scText.Orientation = System.Windows.Forms.Orientation.Horizontal;
          // 
@@ -213,15 +218,15 @@
          // scText.Panel2
          // 
          this.scText.Panel2.Controls.Add(this.panel4);
-         this.scText.Size = new System.Drawing.Size(564, 315);
-         this.scText.SplitterDistance = 156;
+         this.scText.Size = new System.Drawing.Size(564, 362);
+         this.scText.SplitterDistance = 179;
          this.scText.SplitterWidth = 1;
          this.scText.TabIndex = 15;
          // 
          // scTextTools
          // 
          this.scTextTools.Dock = System.Windows.Forms.DockStyle.Fill;
-         this.scTextTools.Location = new System.Drawing.Point(3, 3);
+         this.scTextTools.Location = new System.Drawing.Point(3, 48);
          this.scTextTools.Name = "scTextTools";
          this.scTextTools.Orientation = System.Windows.Forms.Orientation.Horizontal;
          // 
@@ -232,8 +237,8 @@
          // scTextTools.Panel2
          // 
          this.scTextTools.Panel2.Controls.Add(this.panel6);
-         this.scTextTools.Size = new System.Drawing.Size(564, 144);
-         this.scTextTools.SplitterDistance = 70;
+         this.scTextTools.Size = new System.Drawing.Size(564, 134);
+         this.scTextTools.SplitterDistance = 65;
          this.scTextTools.SplitterWidth = 1;
          this.scTextTools.TabIndex = 16;
          // 
@@ -244,7 +249,7 @@
          this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
          this.panel5.Location = new System.Drawing.Point(0, 0);
          this.panel5.Name = "panel5";
-         this.panel5.Size = new System.Drawing.Size(564, 70);
+         this.panel5.Size = new System.Drawing.Size(564, 65);
          this.panel5.TabIndex = 13;
          // 
          // label2
@@ -289,7 +294,7 @@
          this.txbSearch.Name = "txbSearch";
          this.txbSearch.Paddings = new System.Windows.Forms.Padding(0);
          this.txbSearch.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-         this.txbSearch.Size = new System.Drawing.Size(565, 62);
+         this.txbSearch.Size = new System.Drawing.Size(565, 57);
          this.txbSearch.TabIndex = 9;
          this.txbSearch.TextAreaBorderColor = System.Drawing.Color.Transparent;
          this.txbSearch.Zoom = 100;
@@ -301,7 +306,7 @@
          this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
          this.panel6.Location = new System.Drawing.Point(0, 0);
          this.panel6.Name = "panel6";
-         this.panel6.Size = new System.Drawing.Size(564, 73);
+         this.panel6.Size = new System.Drawing.Size(564, 68);
          this.panel6.TabIndex = 14;
          // 
          // label4
@@ -346,7 +351,7 @@
          this.txbReplace.Name = "txbReplace";
          this.txbReplace.Paddings = new System.Windows.Forms.Padding(0);
          this.txbReplace.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-         this.txbReplace.Size = new System.Drawing.Size(565, 54);
+         this.txbReplace.Size = new System.Drawing.Size(565, 49);
          this.txbReplace.TabIndex = 9;
          this.txbReplace.TextAreaBorderColor = System.Drawing.Color.Transparent;
          this.txbReplace.Zoom = 100;
@@ -358,39 +363,54 @@
             | System.Windows.Forms.AnchorStyles.Right)));
          this.tlpPrincipal.ColumnCount = 1;
          this.tlpPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-         this.tlpPrincipal.Controls.Add(this.panel2, 0, 1);
-         this.tlpPrincipal.Controls.Add(this.scTextTools, 0, 0);
-         this.tlpPrincipal.Controls.Add(this.scText, 0, 2);
+         this.tlpPrincipal.Controls.Add(this.pnFormMode, 0, 0);
+         this.tlpPrincipal.Controls.Add(this.scTextTools, 0, 1);
+         this.tlpPrincipal.Controls.Add(this.pnSearchMode, 0, 2);
+         this.tlpPrincipal.Controls.Add(this.scText, 0, 3);
          this.tlpPrincipal.Location = new System.Drawing.Point(12, 12);
          this.tlpPrincipal.Name = "tlpPrincipal";
-         this.tlpPrincipal.RowCount = 3;
-         this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+         this.tlpPrincipal.RowCount = 4;
+         this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+         this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+         this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
          this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-         this.tlpPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 61F));
-         this.tlpPrincipal.Size = new System.Drawing.Size(570, 511);
+         this.tlpPrincipal.Size = new System.Drawing.Size(570, 598);
          this.tlpPrincipal.TabIndex = 17;
          // 
-         // panel2
+         // pnFormMode
          // 
-         this.panel2.Controls.Add(this.rbtnRegex);
-         this.panel2.Controls.Add(this.rbtnNormal);
-         this.panel2.Controls.Add(this.label5);
-         this.panel2.Controls.Add(this.btnReplace);
-         this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-         this.panel2.Location = new System.Drawing.Point(3, 153);
-         this.panel2.Name = "panel2";
-         this.panel2.Size = new System.Drawing.Size(564, 34);
-         this.panel2.TabIndex = 10;
+         this.pnFormMode.Controls.Add(this.rbtnExtract);
+         this.pnFormMode.Controls.Add(this.rbtnReplace);
+         this.pnFormMode.Controls.Add(this.label6);
+         this.pnFormMode.Dock = System.Windows.Forms.DockStyle.Fill;
+         this.pnFormMode.Location = new System.Drawing.Point(3, 3);
+         this.pnFormMode.Name = "pnFormMode";
+         this.pnFormMode.Size = new System.Drawing.Size(564, 39);
+         this.pnFormMode.TabIndex = 10;
          // 
-         // label5
+         // pnSearchMode
          // 
-         this.label5.AutoSize = true;
-         this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-         this.label5.Location = new System.Drawing.Point(3, 0);
-         this.label5.Name = "label5";
-         this.label5.Size = new System.Drawing.Size(70, 13);
-         this.label5.TabIndex = 8;
-         this.label5.Text = "Search mode";
+         this.pnSearchMode.Controls.Add(this.rbtnRegex);
+         this.pnSearchMode.Controls.Add(this.rbtnNormal);
+         this.pnSearchMode.Controls.Add(this.label5);
+         this.pnSearchMode.Controls.Add(this.btnReplace);
+         this.pnSearchMode.Dock = System.Windows.Forms.DockStyle.Fill;
+         this.pnSearchMode.Location = new System.Drawing.Point(3, 188);
+         this.pnSearchMode.Name = "pnSearchMode";
+         this.pnSearchMode.Size = new System.Drawing.Size(564, 39);
+         this.pnSearchMode.TabIndex = 10;
+         // 
+         // rbtnRegex
+         // 
+         this.rbtnRegex.AutoSize = true;
+         this.rbtnRegex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.rbtnRegex.Location = new System.Drawing.Point(64, 14);
+         this.rbtnRegex.Name = "rbtnRegex";
+         this.rbtnRegex.Size = new System.Drawing.Size(118, 17);
+         this.rbtnRegex.TabIndex = 10;
+         this.rbtnRegex.TabStop = true;
+         this.rbtnRegex.Text = "Regular expression ";
+         this.rbtnRegex.UseVisualStyleBackColor = true;
          // 
          // rbtnNormal
          // 
@@ -405,26 +425,59 @@
          this.rbtnNormal.Text = "Normal";
          this.rbtnNormal.UseVisualStyleBackColor = true;
          // 
-         // rbtnRegex
+         // label5
          // 
-         this.rbtnRegex.AutoSize = true;
-         this.rbtnRegex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-         this.rbtnRegex.Location = new System.Drawing.Point(64, 14);
-         this.rbtnRegex.Name = "rbtnRegex";
-         this.rbtnRegex.Size = new System.Drawing.Size(115, 17);
-         this.rbtnRegex.TabIndex = 10;
-         this.rbtnRegex.TabStop = true;
-         this.rbtnRegex.Text = "Regular expression";
-         this.rbtnRegex.UseVisualStyleBackColor = true;
+         this.label5.AutoSize = true;
+         this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.label5.Location = new System.Drawing.Point(3, 0);
+         this.label5.Name = "label5";
+         this.label5.Size = new System.Drawing.Size(70, 13);
+         this.label5.TabIndex = 8;
+         this.label5.Text = "Search mode";
+         // 
+         // rbtnExtract
+         // 
+         this.rbtnExtract.AutoSize = true;
+         this.rbtnExtract.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.rbtnExtract.Location = new System.Drawing.Point(64, 14);
+         this.rbtnExtract.Name = "rbtnExtract";
+         this.rbtnExtract.Size = new System.Drawing.Size(58, 17);
+         this.rbtnExtract.TabIndex = 13;
+         this.rbtnExtract.TabStop = true;
+         this.rbtnExtract.Text = "Extract";
+         this.rbtnExtract.UseVisualStyleBackColor = true;
+         // 
+         // rbtnReplace
+         // 
+         this.rbtnReplace.AutoSize = true;
+         this.rbtnReplace.Checked = true;
+         this.rbtnReplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.rbtnReplace.Location = new System.Drawing.Point(0, 14);
+         this.rbtnReplace.Name = "rbtnReplace";
+         this.rbtnReplace.Size = new System.Drawing.Size(65, 17);
+         this.rbtnReplace.TabIndex = 12;
+         this.rbtnReplace.TabStop = true;
+         this.rbtnReplace.Text = "Replace";
+         this.rbtnReplace.UseVisualStyleBackColor = true;
+         // 
+         // label6
+         // 
+         this.label6.AutoSize = true;
+         this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+         this.label6.Location = new System.Drawing.Point(3, 0);
+         this.label6.Name = "label6";
+         this.label6.Size = new System.Drawing.Size(57, 13);
+         this.label6.TabIndex = 11;
+         this.label6.Text = "Text mode";
          // 
          // ReplaceText
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-         this.ClientSize = new System.Drawing.Size(594, 535);
+         this.ClientSize = new System.Drawing.Size(594, 622);
          this.Controls.Add(this.tlpPrincipal);
-         this.MinimumSize = new System.Drawing.Size(610, 573);
+         this.MinimumSize = new System.Drawing.Size(610, 660);
          this.Name = "ReplaceText";
          this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          this.Text = "ReplaceText";
@@ -449,8 +502,10 @@
          this.panel6.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)(this.txbReplace)).EndInit();
          this.tlpPrincipal.ResumeLayout(false);
-         this.panel2.ResumeLayout(false);
-         this.panel2.PerformLayout();
+         this.pnFormMode.ResumeLayout(false);
+         this.pnFormMode.PerformLayout();
+         this.pnSearchMode.ResumeLayout(false);
+         this.pnSearchMode.PerformLayout();
          this.ResumeLayout(false);
 
       }
@@ -472,10 +527,14 @@
       private System.Windows.Forms.Label label4;
       private FastColoredTextBoxNS.FastColoredTextBox txbReplace;
       private System.Windows.Forms.TableLayoutPanel tlpPrincipal;
-      private System.Windows.Forms.Panel panel2;
+      private System.Windows.Forms.Panel pnSearchMode;
       private System.Windows.Forms.Label label5;
       private System.Windows.Forms.RadioButton rbtnRegex;
       private System.Windows.Forms.RadioButton rbtnNormal;
+      private System.Windows.Forms.Panel pnFormMode;
+      private System.Windows.Forms.RadioButton rbtnExtract;
+      private System.Windows.Forms.RadioButton rbtnReplace;
+      private System.Windows.Forms.Label label6;
    }
 }
 
